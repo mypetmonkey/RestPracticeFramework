@@ -2,7 +2,7 @@ package api.testscript;
 
 import org.testng.annotations.Test;
 
-import ap.endpoints.UserEndpoints;
+import api.endpoints.UserEndpoints;
 import api.payloads.User;
 import api.utility.DataProviders;
 import io.restassured.response.Response;
