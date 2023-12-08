@@ -28,3 +28,8 @@
 [INFO ] 2023-11-11 17:41:09.033 [main] RestPracticeFramework - get user data
 [INFO ] 2023-11-11 17:41:10.866 [main] RestPracticeFramework - update user data
 [INFO ] 2023-11-11 17:41:12.334 [main] RestPracticeFramework - delete user data
+[INFO ] 2023-12-01 10:16:23.495 [main] RestPracticeFramework - read user data
+[INFO ] 2023-12-01 10:16:27.459 [main] RestPracticeFramework - create user data
+[INFO ] 2023-12-01 10:16:29.396 [main] RestPracticeFramework - get user data
+[INFO ] 2023-12-01 10:16:31.250 [main] RestPracticeFramework - update user data
+[INFO ] 2023-12-01 10:16:32.884 [main] RestPracticeFramework - delete user data

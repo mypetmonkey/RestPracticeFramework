@@ -1,5 +1,7 @@
 package api.testscript;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
@@ -12,9 +14,10 @@ public class StoreTest {
 
 	Faker faker;
 	Store storepayload;
+	public static Logger logger;
 	
-//	@BeforeClass 
-//	public void fakedata() {
+	@BeforeClass 
+	public void fakedata() {
 //		faker=new Faker();
 //		storepayload=new Store();
 //		storepayload.setId(faker.idNumber().hashCode()); 
@@ -24,7 +27,12 @@ public class StoreTest {
 //		storepayload.setStatus(faker.name().firstName());
 //		storepayload.setComplete(true);
 //	
-//	}
+//	
+		       //obtain logger
+				logger=LogManager.getLogger("RestPracticeFramework");
+				//log
+				logger.info("read user data");
+	}
 	
 	
 	
@@ -39,6 +47,7 @@ public class StoreTest {
 		.statusCode(200)
 		.contentType(ContentType.JSON)
 		.log().all();
+		//logger.info("create petstore data");
 	}
 	
 	@Test(priority=2)
@@ -49,6 +58,7 @@ public class StoreTest {
 		.statusCode(200)
 		.log().all();
 			
+		//logger.info("fetch order data");
 		
 	}
 	
@@ -59,6 +69,8 @@ public class StoreTest {
 		resp.then().log().ifError()
 		.assertThat()
 		.log().all();
+		
+		//logger.info("delete myorder data");
 	}
 	
 }

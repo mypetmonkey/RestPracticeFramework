@@ -5,7 +5,8 @@
     <classes>
       <class name="api.testscript.StoreTest">
         <methods>
-          <include name="getOrderTest"/>
+          <include name="deleteTest"/>
+          <include name="test"/>
         </methods>
       </class> <!-- api.testscript.StoreTest -->
     </classes>
